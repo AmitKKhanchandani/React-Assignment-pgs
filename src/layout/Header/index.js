@@ -30,7 +30,7 @@ class Header extends Component {
   render() {
     return (
         <nav className="navbar navbar-light bg-light justify-content-between" id="Navmenu">
-            <a className="navbar-brand" href="/"> 
+            <a className="navbar-brand" href={window.location.href}> 
             <img src={this.state.logoUrl} alt="Logo"/> 
               React Assignment</a>
             <form className="form-inline" onSubmit={this.handleLogout}>
