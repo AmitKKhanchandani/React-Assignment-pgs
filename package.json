@@ -31,7 +31,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "http://amitkkhanchandani.github.io/react-Assignment-pgs",
+  "homepage": "http://amitkkhanchandani.github.io/React-Assignment-pgs",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
