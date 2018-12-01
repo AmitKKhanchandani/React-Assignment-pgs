@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {connect} from 'react-redux';
 
 class Finish extends Component {
   constructor(props) {
@@ -9,12 +10,31 @@ class Finish extends Component {
     };
 
     this.toggle = this.toggle.bind(this);
+    this.printNumberHitory = this.printNumberHitory.bind(this);
   }
 
   toggle() {
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  printNumberHitory(){
+    var text = '';
+    var items = this.props.dataReducer.items;
+    if(items == undefined) {
+      return text;
+    }
+    var totallength = items.length - 1;
+    items.forEach(function (item, index) {
+        if(totallength != index){
+            text += item + ', ';
+        }
+        else{
+            text += item + '.';
+        }
+    });  
+    return text;
   }
 
   render() {
@@ -36,24 +56,23 @@ class Finish extends Component {
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Carousel Selection History</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            {(!this.props.dataReducer.items || this.props.dataReducer.items.length > 0) &&
+                <div>
+                    Number selected are {this.printNumberHitory()}
+                </div>
+            }
+            {(!this.props.dataReducer.items || this.props.dataReducer.items.length == 0) &&
+                <div>
+                    No History Found.
+                </div>
+            }
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.toggle}>
-              Do Something
-            </Button>{" "}
-            <Button color="secondary" onClick={this.toggle}>
-              Cancel
+              Close
             </Button>
           </ModalFooter>
         </Modal>
@@ -62,4 +81,11 @@ class Finish extends Component {
   }
 }
 
-export default Finish;
+
+const mapStateToProps = state => {
+    return {
+        dataReducer: state.dataReducer
+    };
+};
+
+export default connect(mapStateToProps)(Finish);

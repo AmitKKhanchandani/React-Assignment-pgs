@@ -1,6 +1,36 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux';
+import Store from '../../utils/store';
 
 class NumberSelector extends Component {
+
+    constructor(props){
+        super(props);
+
+
+        // Bindings
+        this.onSelectChange = this.onSelectChange.bind(this);
+    }
+
+    onSelectChange(e){
+        e.preventDefault();
+        var value = (e.target.value);
+        Store.store.dispatch({
+            type: 'CURRENT_ITEM',
+            payload: {
+                number: value
+            }
+        });
+        if(value > 0 ){
+            Store.store.dispatch({
+                type: 'ADD_ITEM',
+                payload: {
+                    number: value
+                }
+            });
+        }
+
+    }
   render() {
     return (
       <div className="container">
@@ -8,7 +38,7 @@ class NumberSelector extends Component {
           <div className="col-md-6 offset-md-2">
             <div className="form-group mt10">
               <label htmlFor="carousel">Select Number For Carousel:</label>
-              <select className="form-control" id="carousel">
+              <select className="form-control" id="carousel" onChange={this.onSelectChange}>
                 <option value="0">Select</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -39,4 +69,9 @@ class NumberSelector extends Component {
   }
 }
 
-export default NumberSelector;
+const mapStateToProps = (state) => {
+    console.log('number selector', state);
+    return state;
+}
+
+export default connect(mapStateToProps)(NumberSelector);

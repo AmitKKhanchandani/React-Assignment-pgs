@@ -83,3 +83,11 @@
 #LoginForm .logo {
   margin-bottom: 5px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #LoginForm .main-div {
+    max-width: 100%;
+  }
+  
+}

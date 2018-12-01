@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
+import Store from "../../utils/store";
 
 class Login extends Component {
   
@@ -29,7 +30,9 @@ class Login extends Component {
         var username = state.username;
         var password = state.password;
         if(username === "shaadi" && password === "123"){
-            alert('Welcome to the Team')
+            Store.store.dispatch({
+                type: "LOGIN"
+            });
         }
         else{
             this.setState({
@@ -82,9 +85,10 @@ class Login extends Component {
                         value={state.password}
                     />
                     </div>
-                    <div className="forgot">
-                    <a href="reset.html">Forgot password?</a>
-                    </div>
+                    {/* <div className="forgot">
+                        Username: shaadi <br/>
+                        Password: 123
+                    </div> */}
                     {(state.alert) &&
                         <div className="alert alert-danger" role="alert">
                             The User Name or Password entered is incorrect.  Please try again.
