@@ -19,7 +19,7 @@ class ImageCarousel extends Component {
         this.state = {
             img:[
                 {
-                    src: '/images/placeholder/select.png',
+                    src: window.location.href + 'images/placeholder/select.png',
                     altText: 'Carousel',
                     caption: ''
                 }

@@ -6,6 +6,10 @@ class Header extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      logoUrl: window.location.href + 'images/logo.png'
+    }
     
     // Bindings
     this.handleLogout = this.handleLogout.bind(this);
@@ -27,7 +31,7 @@ class Header extends Component {
     return (
         <nav className="navbar navbar-light bg-light justify-content-between" id="Navmenu">
             <a className="navbar-brand" href="/"> 
-            <img src="/images/logo.png" alt="Logo"/> 
+            <img src={this.state.logoUrl} alt="Logo"/> 
               React Assignment</a>
             <form className="form-inline" onSubmit={this.handleLogout}>
                 <div className="username"><i className="fa fa-user-circle-o" aria-hidden="true"></i> Shaadi</div>

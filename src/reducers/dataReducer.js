@@ -20,7 +20,7 @@ export default function dataActions(state = {...initialState}, action){
             var images = [];
             for(var i = 1; i<= currentNumber; i++){
                 var item = {
-                    src: '/images/placeholder/'+i+'.png',
+                    src: window.location.href+'images/placeholder/'+i+'.png',
                     altText: i,
                     caption: i
                 }
