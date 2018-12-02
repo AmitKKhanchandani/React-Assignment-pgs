@@ -61,7 +61,7 @@ class Finish extends Component {
           <ModalBody>
             {(!this.props.dataReducer.items || this.props.dataReducer.items.length > 0) &&
                 <div>
-                    Number selected are {this.printNumberHitory()}
+                    Numbers selected: {this.printNumberHitory()}
                 </div>
             }
             {(!this.props.dataReducer.items || this.props.dataReducer.items.length == 0) &&
