@@ -19,7 +19,7 @@ The Project is Build using:
 
 1) There should be a login page which will take user as shaadi and password as "123"
 
-2) Next page will have 2 secionts a drop down named "Select slids" and a caraousel with finish button below it
+2) Next page will have 2 sections a drop down named "Select slids" and a caraousel with finish button below it
 
 3) After successfull login it should open A page in which it should ask user to select a number between 1 to 20 using a drop down
 
