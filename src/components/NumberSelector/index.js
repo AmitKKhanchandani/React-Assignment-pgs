@@ -39,7 +39,7 @@ class NumberSelector extends Component {
             <div className="form-group mt10">
               <label htmlFor="carousel">Select Number For Carousel:</label>
               <select className="form-control" id="carousel" onChange={this.onSelectChange}>
-                <option value="0">Select</option>
+                <option value="0">Select Slides</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
