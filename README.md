@@ -1,44 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <a href="https://amitkkhanchandani.github.io/React-Assignment-pgs/">
+        <img src="https://raw.githubusercontent.com/AmitKKhanchandani/React-Assignment-pgs/master/readme-resources/logo.png">
+    </a>
+    <br><a href="https://amitkkhanchandani.github.io/React-Assignment-pgs/">View Online</a>
+</p>
 
-## Available Scripts
+# Project Tech Specs
+The Project is Build using:
 
-In the project directory, you can run:
+- React.js - 16.6.3
+- React Redux - 5.1.1
+- Reactstrap ( Bootstrap 4.0)
+- Redux - 4.0.1
+- Redux Persist - 5.10.0
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Requirement Summary
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1) There should be a login page which will take user as shaadi and password as "123"
 
-### `npm test`
+2) Next page will have 2 secionts a drop down named "Select slids" and a caraousel with finish button below it
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3) After successfull login it should open A page in which it should ask user to select a number between 1 to 20 using a drop down
 
-### `npm run build`
+4) After selection it should show caraousel with those many slides.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+eg if user selects 4 , slide text will be One, Two, Three, Four
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+5) After Clicking finish it should open a Model box showing all numbers that user selected while using app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Login Screen
+![Login Screen](https://raw.githubusercontent.com/AmitKKhanchandani/React-Assignment-pgs/master/readme-resources/login%20screen.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Homepage
+![Homepage](https://raw.githubusercontent.com/AmitKKhanchandani/React-Assignment-pgs/master/readme-resources/homepage.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Feature Highlights
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Homepage Features Highlights](https://github.com/AmitKKhanchandani/React-Assignment-pgs/blob/master/readme-resources/features%20highlights.png?raw=true)
 
-## Learn More
+## Redux Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Redux Architecture](https://github.com/AmitKKhanchandani/React-Assignment-pgs/blob/master/readme-resources/redux%20state%20management.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#  View Project
+
+## Method 1
+
+<a href="https://amitkkhanchandani.github.io/React-Assignment-pgs/">View Online</a>
+
+## Method 2
+- Clone/download it
+- Use ```npm install```
+- Use ```npm start```
+
+# License
+
+The content of this project itself is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+The underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+
+© [Amit K Khanchandani](http://www.amitk.co.in)
+
