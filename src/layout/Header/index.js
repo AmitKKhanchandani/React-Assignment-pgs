@@ -11,11 +11,9 @@ class Header extends Component {
       logoUrl: window.location.href + 'images/logo.png'
     }
     
-    // Bindings
-    this.handleLogout = this.handleLogout.bind(this);
   }
   
-  handleLogout(e){
+  handleLogout = (e) => {
     e.preventDefault();
 
     Store.store.dispatch({

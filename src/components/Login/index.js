@@ -12,18 +12,13 @@ class Login extends Component {
             password: '',
             alert: false
         }
-
-        // Bindings
-
-        this.handleOnChangeInput = this.handleOnChangeInput.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleOnChangeInput = evt =>{
         this.setState({[evt.target.id]: evt.target.value});
     }
 
-    handleSubmit(e){
+    handleSubmit = (e) => {
         const state = this.state;
         e.preventDefault();
         e.stopPropagation();
@@ -85,10 +80,6 @@ class Login extends Component {
                         value={state.password}
                     />
                     </div>
-                    {/* <div className="forgot">
-                        Username: shaadi <br/>
-                        Password: 123
-                    </div> */}
                     {(state.alert) &&
                         <div className="alert alert-danger" role="alert">
                             The User Name or Password entered is incorrect.  Please try again.

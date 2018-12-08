@@ -27,14 +27,6 @@ class ImageCarousel extends Component {
             images:[],
             activeIndex: 0
         }
-
-        // Bindings:
-
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
-        this.goToIndex = this.goToIndex.bind(this);
-        this.onExiting = this.onExiting.bind(this);
-        this.onExited = this.onExited.bind(this);
     }
 
     componentDidMount() {
@@ -47,27 +39,27 @@ class ImageCarousel extends Component {
         this.goToIndex(0);
     }
 
-    onExiting() {
+    onExiting = () => {
         this.animating = true;
     }
     
-    onExited() {
+    onExited = () => {
     this.animating = false;
     }
   
-    next() {
+    next = () => {
       if (this.animating) return;
       const nextIndex = this.state.activeIndex === this.props.dataReducer.images.length - 1 ? 0 : this.state.activeIndex + 1;
       this.setState({ activeIndex: nextIndex });
     }
   
-    previous() {
+    previous = () => {
       if (this.animating) return;
       const nextIndex = this.state.activeIndex === 0 ? this.props.dataReducer.images.length - 1 : this.state.activeIndex - 1;
       this.setState({ activeIndex: nextIndex });
     }
   
-    goToIndex(newIndex) {
+    goToIndex= (newIndex) => {
       if (this.animating) return;
       this.setState({ activeIndex: newIndex });
     }

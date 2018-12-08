@@ -9,17 +9,15 @@ class Finish extends Component {
       modal: false
     };
 
-    this.toggle = this.toggle.bind(this);
-    this.printNumberHitory = this.printNumberHitory.bind(this);
   }
 
-  toggle() {
+  toggle = () => {
     this.setState({
       modal: !this.state.modal
     });
   }
 
-  printNumberHitory(){
+  printNumberHitory = () =>{
     var text = '';
     var items = this.props.dataReducer.items;
     if(items == undefined) {

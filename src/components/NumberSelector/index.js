@@ -4,15 +4,7 @@ import Store from '../../utils/store';
 
 class NumberSelector extends Component {
 
-    constructor(props){
-        super(props);
-
-
-        // Bindings
-        this.onSelectChange = this.onSelectChange.bind(this);
-    }
-
-    onSelectChange(e){
+    onSelectChange = (e) =>{
         e.preventDefault();
         var value = (e.target.value);
         Store.store.dispatch({

@@ -7,19 +7,7 @@ import ImageCarousel from "../../components/Carousel";
 import Finish from "../../components/Finish";
 import { connect } from "react-redux";
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    console.log(this.props);
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-      console.log('update', this.props);
-  }
-  
+class Home extends Component {  
 
   render() {
     const loginprops = this.props.loginReducer;
