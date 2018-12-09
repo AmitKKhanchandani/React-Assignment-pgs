@@ -20,8 +20,8 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducers)
 
+let store = createStore(persistedReducer) //,{},composeWithDevTools(applyMiddleware(thunk))
 
-let store = createStore(persistedReducer,{},composeWithDevTools(applyMiddleware(thunk)))
 
 let persistor = persistStore(store);
 
