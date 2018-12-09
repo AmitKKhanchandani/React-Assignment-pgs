@@ -10,14 +10,11 @@ export default function loginActions(state = {...initialState}, action){
             return {
                 ...state,
                 login: true
-            }    
-            break;
+            }
         case LOGOUT:
             return {
                 ...initialState
             }
-            break;
-
         default:
             return state;
     }

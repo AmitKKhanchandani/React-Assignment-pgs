@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
 import Store from '../../utils/store';
+import {FormGroup, CarouselLabel} from './numberSelectorStyle';
+import {Container, Row, Col} from 'styled-bootstrap-grid';
 
 class NumberSelector extends Component {
 
@@ -25,11 +27,11 @@ class NumberSelector extends Component {
     }
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 offset-md-2">
-            <div className="form-group mt10">
-              <label htmlFor="carousel">Select Number For Carousel:</label>
+      <Container>
+        <Row>
+          <Col md={6} mdOffset={2}>
+            <FormGroup>
+              <CarouselLabel htmlFor="carousel">Select Number For Carousel:</CarouselLabel>
               <select className="form-control" id="carousel" onChange={this.onSelectChange}>
                 <option value="0">Select Slides</option>
                 <option value="1">1</option>
@@ -53,10 +55,10 @@ class NumberSelector extends Component {
                 <option value="19">19</option>
                 <option value="20">20</option>
               </select>
-            </div>
-          </div>
-        </div>
-      </div>
+            </FormGroup>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
@@ -64,6 +66,6 @@ class NumberSelector extends Component {
 const mapStateToProps = (state) => {
     console.log('number selector', state);
     return state;
-}
+};
 
 export default connect(mapStateToProps)(NumberSelector);

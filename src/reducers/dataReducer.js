@@ -32,7 +32,6 @@ export default function dataActions(state = {...initialState}, action){
                 items,
                 images
             }
-            break;
         case CURRENT_ITEM:
             var payload = action.payload;
             var currentNumber = payload.number;
@@ -41,13 +40,10 @@ export default function dataActions(state = {...initialState}, action){
                 currentNumber
             }
 
-            break;
-
         case CLEAR:
             return {
                 ...initialState
             }
-            break;
         default:
             return state;
     }

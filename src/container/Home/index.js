@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
     const loginprops = this.props.loginReducer;
     return (
-      <div>
+      <React.Fragment>
         { (!loginprops.login) &&
             <Login />
         }
@@ -20,14 +20,14 @@ class Home extends Component {
         { (loginprops.login) &&
         
             <React.Fragment>
-            <Header />
-            <NumberSelector />
-            <ImageCarousel />
-            <Finish />
-            <Footer />
+              <Header />
+              <NumberSelector />
+              <ImageCarousel />
+              <Finish />
+              <Footer />
             </React.Fragment>
         }
-      </div>
+      </React.Fragment>
     );
   }
 }
