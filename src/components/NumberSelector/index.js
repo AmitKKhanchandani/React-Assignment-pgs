@@ -24,7 +24,7 @@ class NumberSelector extends Component {
             });
         }
 
-    }
+    };
   render() {
     return (
       <Container>
