@@ -1,7 +1,6 @@
 export const ADD_ITEM = "ADD_ITEM";
 export const CLEAR = "CLEAR";
 export const CURRENT_ITEM = "CURRENT_ITEM";
-// export const GET_ITEMS = "GET_ITEMS";
 
 export function addItem(number){
 

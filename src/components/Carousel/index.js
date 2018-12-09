@@ -59,7 +59,7 @@ class ImageCarousel extends Component {
       this.setState({ activeIndex: nextIndex });
     }
   
-    goToIndex= (newIndex) => {
+    goToIndex = (newIndex) => {
       if (this.animating) return;
       this.setState({ activeIndex: newIndex });
     }

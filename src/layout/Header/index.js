@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import './index.css';
+import {
+  Img,
+  UserCircleIcon,
+  SignOutLogo,
+  NavbarLinkColorBlack
+} from './headerStyle';
 import Store from '../../utils/store';
+import { Nav, Container, Navbar, NavbarLink } from 'styled-bootstrap-components';
+
 
 class Header extends Component {
 
@@ -26,16 +33,33 @@ class Header extends Component {
   }
 
   render() {
+ 
     return (
-        <nav className="navbar navbar-light bg-light justify-content-between" id="Navmenu">
-            <a className="navbar-brand" href={window.location.href}> 
-            <img src={this.state.logoUrl} alt="Logo"/> 
-              React Assignment</a>
-            <form className="form-inline" onSubmit={this.handleLogout}>
-                <div className="username"><i className="fa fa-user-circle-o" aria-hidden="true"></i> Shaadi</div>
-                <button className="btn btn-outline-success my-2 my-sm-0 logout" type="submit"><i className="fa fa-sign-out" aria-hidden="true"></i></button>
-            </form>
-      </nav>
+      //   <nav className="navbar navbar-light bg-light justify-content-between" id="Navmenu">
+      //       <a className="navbar-brand" href={window.location.href}> 
+      //       <Img src={this.state.logoUrl} alt="Logo"/> 
+      //         React Assignment</a>
+      //       <form className="form-inline" onSubmit={this.handleLogout}>
+      //           <div className="username"><UserCircleIcon /> Shaadi</div>
+      //           <button className="btn btn-outline-success my-2 my-sm-0 logout" type="submit"><i className="fa fa-sign-out" aria-hidden="true"></i></button>
+      //       </form>
+      // </nav>
+      <Container fluid>
+        <Container fluid>
+          <Navbar light>
+            <Nav start >
+              <NavbarLink light brand href={window.location.href}>
+              <Img src={this.state.logoUrl} alt="Logo"/> 
+                React Assignment
+              </NavbarLink>
+            </Nav>
+            <Nav end>
+              <NavbarLinkColorBlack href="#"><UserCircleIcon /> Shaadi</NavbarLinkColorBlack>
+              <NavbarLink light href="#" onClick={this.handleLogout}><SignOutLogo /></NavbarLink>
+            </Nav>
+          </Navbar>
+        </Container>
+      </Container>
     );
   }
 }
