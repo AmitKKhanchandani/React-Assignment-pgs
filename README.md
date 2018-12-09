@@ -13,7 +13,14 @@ The Project is Build using:
 - Reactstrap ( Bootstrap 4.0)
 - Redux - 4.0.1
 - Redux Persist - 5.10.0
+- Styled components - 4.1.2
 
+## Project Update 1:
+
+The Project has been updated with
+
+- Removal of function bindings, Instead now function uses es6 auto binding functionality.
+- Use of Styled Components Intead of Standard Css file. (The entire project has only bootstrap 4 css file rest, for custom styling styled components)
 
 ## Project Requirement Summary
 
