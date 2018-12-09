@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { connect } from "react-redux";
 import { Container, Row } from "styled-bootstrap-grid";
-import { Col, Div, DivTextCenter } from "./finishStyle";
+import { Coloumn, Div, DivTextCenter } from "./finishStyle";
 
 class Finish extends Component {
   constructor(props) {
@@ -40,13 +40,13 @@ class Finish extends Component {
       <React.Fragment>
         <Container>
           <Row>
-            <Col md={12}>
+            <Coloumn md={12}>
               <DivTextCenter>
                 <Button color="danger" onClick={this.toggle}>
                   Finish
                 </Button>
               </DivTextCenter>
-            </Col>
+            </Coloumn>
           </Row>
         </Container>
 
