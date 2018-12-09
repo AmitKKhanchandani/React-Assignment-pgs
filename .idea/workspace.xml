@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3bca48e-92ba-4484-b60b-f5150efcfc18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Carousel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="f3bca48e-92ba-4484-b60b-f5150efcfc18" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,15 +19,16 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="6" />
+          <entry key="ESLintLanguageService" value="7" />
           <entry key="PrettierLanguageServiceImpl" value="4" />
         </counts>
       </usages-collector>
@@ -67,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Login/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="1104">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
               <folding>
                 <element signature="e#67#105#0" expanded="true" />
               </folding>
@@ -79,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layout/Header/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="1081">
               <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
             </state>
           </provider>
@@ -88,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Carousel/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="1587">
               <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
             </state>
           </provider>
@@ -98,28 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/layout/Footer/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="11" column="126" lean-forward="true" selection-start-line="11" selection-start-column="126" selection-end-line="11" selection-end-column="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Login/loginStyle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Login/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="92" selection-end-column="1" />
+              <caret line="11" column="95" lean-forward="true" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -243,7 +217,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="footer&#9;null&#9;null&#10;header&#9;null&#9;null&#10;login&#9;null&#9;null&#10;ca&#9;FILE&#9;file://D:/Source Codes/React/react assignment pgs/src/components/Carousel&#10;num&#9;FILE&#9;file://D:/Source Codes/React/react assignment pgs/src/components/NumberSelector" />
+    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file://D:/Source Codes/React/react assignment pgs/package.json&#10;footer&#9;null&#9;null&#10;header&#9;null&#9;null&#10;login&#9;null&#9;null&#10;ca&#9;FILE&#9;file://D:/Source Codes/React/react assignment pgs/src/components/Carousel&#10;num&#9;FILE&#9;file://D:/Source Codes/React/react assignment pgs/src/components/NumberSelector" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -282,11 +256,12 @@
       <workItem from="1544344494539" duration="523000" />
       <workItem from="1544348988268" duration="974000" />
       <workItem from="1544350235892" duration="1027000" />
+      <workItem from="1544351510827" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5200000" />
+    <option name="totallyTimeSpent" value="5917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -354,27 +329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/loginStyle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="1104">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding>
             <element signature="e#67#105#0" expanded="true" />
           </folding>
@@ -383,22 +341,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/Header/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="1081">
           <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="86" selection-start-line="86" selection-end-line="92" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Carousel/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="1587">
           <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login/loginStyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/Footer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="11" column="126" lean-forward="true" selection-start-line="11" selection-start-column="126" selection-end-line="11" selection-end-column="126" />
+          <caret line="11" column="95" lean-forward="true" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
         </state>
       </provider>
     </entry>
