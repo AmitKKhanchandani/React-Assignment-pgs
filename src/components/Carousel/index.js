@@ -78,8 +78,8 @@ class ImageCarousel extends Component {
         >
           <Img src={item.src} alt={item.altText} />
           <CarouselCaption
-            captionText={item.caption}
-            captionHeader={item.caption}
+            captionText={(item.caption).toString()}
+            captionHeader={(item.caption).toString()}
           />
         </CarouselItem>
       );

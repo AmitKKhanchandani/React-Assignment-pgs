@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import "./index.css";
+// import "./index.css";
 import Store from "../../utils/store";
+import {LoginFormContainer, LoginFormRow,  Panel, Logo, DivMain, FormGroup, InputFormControl, LoginButton} from './loginStyle';
+import { Alert } from 'reactstrap';
 
 class Login extends Component {
   
@@ -16,7 +18,7 @@ class Login extends Component {
 
     handleOnChangeInput = evt =>{
         this.setState({[evt.target.id]: evt.target.value});
-    }
+    };
 
     handleSubmit = (e) => {
         const state = this.state;
@@ -36,64 +38,60 @@ class Login extends Component {
                 password: ""
             });
         }
-    }
+    };
 
 
     render() {
         const state = this.state;
         return (
         
-        <div id="LoginForm">
-            <div className="container">
-            <div className="login-form">
-                <div className="main-div">
-                <div className="panel">
-                    <img
+        <LoginFormContainer id="LoginForm">
+
+            <LoginFormRow>
+                <DivMain>
+                <Panel>
+                    <Logo
                     src="images/logo.png"
-                    className="img-responsive logo"
                     alt="Logo"
                     />
 
                     <p>Please enter username and password</p>
-                </div>
+                </Panel>
                 <form id="Login" onSubmit={this.handleSubmit}>
-                    <div className="form-group">
-                    <input
+                    <FormGroup>
+                    <InputFormControl
                         type="text"
-                        className="form-control"
                         id="username"
                         required
                         onChange={this.handleOnChangeInput}
                         placeholder="Username"
                         value={state.username}
                     />
-                    </div>
+                    </FormGroup>
 
-                    <div className="form-group">
-                    <input
+                    <FormGroup>
+                    <InputFormControl
                         type="password"
-                        className="form-control"
                         id="password"
                         required
                         onChange={this.handleOnChangeInput}
                         placeholder="Password"
                         value={state.password}
                     />
-                    </div>
+                    </FormGroup>
                     {(state.alert) &&
-                        <div className="alert alert-danger" role="alert">
-                            The User Name or Password entered is incorrect.  Please try again.
-                        </div>
+                        <Alert color="danger">
+                            The User Name or Password entered is incorrect. Please try again.
+                        </Alert>
                     }
-                    <button type="submit" className="btn btn-primary">
+                    <LoginButton type="submit">
                     Login
-                    </button>
+                    </LoginButton>
                 </form>
-                </div>
+                </DivMain>
                 <p>Designed by Amit K Khanchandani</p>
-            </div>
-            </div>
-        </div>
+            </LoginFormRow>
+        </LoginFormContainer>
         );
     }
 }

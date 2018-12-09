@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Home from './container/Home';
-import './styles/common.css';
 import { Provider } from 'react-redux';
 import Store from './utils/store';
 import { PersistGate } from 'redux-persist/integration/react';

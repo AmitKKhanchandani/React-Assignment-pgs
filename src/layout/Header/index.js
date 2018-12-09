@@ -47,13 +47,13 @@ class Header extends Component {
       <Container fluid>
         <Container fluid>
           <Navbar light>
-            <Nav start >
+            <Nav start="true" >
               <NavbarLink light brand href={window.location.href}>
               <Img src={this.state.logoUrl} alt="Logo"/> 
                 React Assignment
               </NavbarLink>
             </Nav>
-            <Nav end>
+            <Nav end="true">
               <NavbarLinkColorBlack href="#"><UserCircleIcon /> Shaadi</NavbarLinkColorBlack>
               <NavbarLink light href="#" onClick={this.handleLogout}><SignOutLogo /></NavbarLink>
             </Nav>
